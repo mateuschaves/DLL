@@ -72,3 +72,12 @@ MINHADLL void projecao(int vec1[], int vec2[], float r[], int rn){
         r[i] = k*vec1[i];
     }
 }
+
+MINHADLL float angulo(int vec1[], int vec2[], int rn){
+    return radianos_to_grau(acos(produto_Escalar(vec1, vec2, rn) / (modulo_vetor(vec1, rn, 0, 0) * modulo_vetor(vec2, rn, 0, 0))));
+}
+
+MINHADLL float radianos_to_grau(float rad){
+    return rad * 57.2958;
+}
+
