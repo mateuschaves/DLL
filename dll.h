@@ -15,3 +15,4 @@ MINHADLL float modulo_vetor(int vec[], int rn, int r, float rs);
 MINHADLL void projecao(int vec1[], int vec2[], float r[], int rn);
 MINHADLL float angulo(int vec1[], int vec2[], int rn);
 MINHADLL float radianos_to_grau(float rad);
+MINHADLL void angulos_diretores(int vec[], float r[], int rn);

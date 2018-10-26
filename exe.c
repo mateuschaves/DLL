@@ -5,9 +5,10 @@
  
 int main(int argc,char **argv)
 {
- int vec1[2] = {5, 1};
- int vec2[2] = {-2, 10};
+ int vec1[3] = {3, -4, 12};
  float r[3];
- printf("%.2f\n", angulo(vec1, vec2, 2));
+ angulos_diretores(vec1, r, 3);
+ for(int i = 0 ; i < 3; i++)
+    printf("%0.2f\n", r[i]);
  system("pause");
 }

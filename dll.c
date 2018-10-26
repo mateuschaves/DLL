@@ -81,3 +81,10 @@ MINHADLL float radianos_to_grau(float rad){
     return rad * 57.2958;
 }
 
+MINHADLL void angulos_diretores(int vec[], float r[], int rn){
+    float mod = modulo_vetor(vec, rn, 0, 0);
+    for(int i =0; i < rn; i++){
+        r[i] = radianos_to_grau(acos(vec[i] / mod));
+    }
+}
+
