@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "dll.h"
+#include <math.h>
  
 MINHADLL void soma_vetores(int vec1[], int vec2[], int r[], int rn)
 {
@@ -33,7 +34,7 @@ MINHADLL int produto_Escalar(int vec1[], int vec2[],int rn){
       return r;
 }
 
-MINHADLL int produto_vetorial(int vec1[], int vec2[], int vet[]){
+MINHADLL void produto_vetorial(int vec1[], int vec2[], int vet[]){
     vet[0] =  ((vec1[1]*vec2[2]) - (vec1[2]*vec2[1]));
     vet[1] =  - (((vec1[0]*vec2[2]) - (vec1[2]*vec2[0]))); 
     vet[2] =  ((vec1[0]*vec2[1]) - (vec1[1]*vec2[0]));
@@ -51,4 +52,23 @@ for (i=0;i<3;i++){
 r +=vet[i]*vec3[i];
 }
 return r;
+}
+MINHADLL float modulo_vetor(int vec[], int rn, int r, float rs){
+    for(int i = 0; i < rn; i++){ 
+        r += (vec[i] * vec[i]);
+        rs = sqrt(r);
+    }
+    return rs;
+}
+
+MINHADLL void projecao(int vec1[], int vec2[], float r[], int rn){
+    int pe = produto_Escalar(vec1, vec2, rn);
+    int modulo = 0;
+    for(int i = 0; i < rn; i++){
+        modulo += pow(vec1[i], 2);
+    }
+    float k = (float) pe / (float) modulo;
+    for(int i = 0; i < rn; i++){
+        r[i] = k*vec1[i];
+    }
 }
