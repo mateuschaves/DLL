@@ -7,6 +7,6 @@ Desenvolvimento de uma DLL para resolver problemas da Geometria Analítica.
 
 # Funções disponíveis
 - Vector_sum() <br><br>
-  Realiza a soma entre dois vetores e joga o resultado dentro do vetor ```resultado[]```
- ```void vector_sum(int vetor1[], int vetor2[], int resultado[], int rn)``` <br> <br>
+  Realiza a soma entre dois vetores e joga o resultado dentro do vetor ```resultado[]``` <br> <br>
+ ```void vector_sum(int vetor1[], int vetor2[], int resultado[], int rn)```
 
