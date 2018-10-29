@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../dll.h"
-#include <time.h>
 
 int main(int argc,char **argv){
     // Vetor 1
