@@ -9,5 +9,5 @@ Desenvolvimento de uma DLL para resolver problemas da Geometria Analítica.
 - Vector_sum() <br><br>
   Realiza a soma entre dois vetores e joga o resultado dentro do vetor ```resultado[]``` <br> <br>
  ```void vector_sum(int vetor1[], int vetor2[], int resultado[], int rn)``` <br> <br>
- [Exemplo de utilização](https://github.com/mateuschaves/DLL/blob/master/exemplos/soma_vetores.c)
+ [Exemplo de utilização](https://github.com/mateuschaves/DLL/blob/master/exemplos/vector_sum.c)
 
