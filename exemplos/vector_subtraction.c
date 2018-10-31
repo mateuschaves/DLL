@@ -13,7 +13,7 @@ int main(int argc,char **argv){
     int rn = sizeof(vec1) / sizeof(int);
     // Chamando a função de subtração e passando os parâmetros
     vector_subtraction(vec1, vec2, r, rn);
-    // Mostrando o vetor resultante da soma
+    // Mostrando o vetor resultante da subtração
     printf("<");
     for(int i = 0; i < rn; i++){
         if(i != 2)
