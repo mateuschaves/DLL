@@ -12,7 +12,7 @@ int main(int argc,char **argv){
     // Achando o Rn (dimensão) do vetor
     int rn = sizeof(vec1) / sizeof(int);
     // Chamando a função de soma e passando os parâmetros
-    vector_subtraction(vec1, vec2, r, rn);
+    vector_sum(vec1, vec2, r, rn);
     // Mostrando o vetor resultante da soma
     printf("<");
     for(int i = 0; i < rn; i++){
