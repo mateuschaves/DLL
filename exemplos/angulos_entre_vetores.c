@@ -12,7 +12,7 @@ int main(int argc,char **argv){
     int rn = sizeof(vec2) / sizeof(int);
     // Chamando a função que calcula o ângulo entre os vetores e passando os parâmetros
     float r = angle_between_vectors(vec1, vec2, rn);
-   // Mostrando o vetor resultante do produto vetorial
+   // Mostrando o ângulo entre os vetores.
     printf("R->");
     printf("%.2f\n", r);
     system("pause");
