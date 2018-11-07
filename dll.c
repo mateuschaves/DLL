@@ -87,4 +87,3 @@ analytical_geometry void angles_directors(int vec[], float r[], int rn){
         r[i] = radians_to_degrees(acos(vec[i] / mod));
     }
 }
-
