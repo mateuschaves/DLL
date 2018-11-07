@@ -3,7 +3,6 @@
 #include "../dll.h"
 
 int main(int argc,char **argv){
-    
     // Vetor 1
     int vec1[3] = {1, 2, 3};
     // Vetor 2
@@ -16,14 +15,9 @@ int main(int argc,char **argv){
     vector_product(vec1, vec2, vet);
     // Mostrando o vetor resultante do produto vetorial  
     printf("<");
-    for(int i = 0; i < rn; i++)
-     printf("%d,", vet[i]);
-    /*{
-        if(i != 3)
-            printf("%d,", vet[i]);
-        else
-            printf("%d", vet[i]);
-    }*/
+    for(int i = 0; i < rn; i++){
+        printf("%d,", vet[i]);
+    }
     printf(">\n");
     system("pause");
 }
