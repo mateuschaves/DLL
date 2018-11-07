@@ -12,21 +12,10 @@ int main(int argc,char **argv){
     int vec3[3] = {0, 3, 2};
     // Vetor que guarda a resposta da função
     int vet[3];
-     // Achando o Rn (dimensão) do vetor
-   // int rn = sizeof(vec1) / sizeof(int);
-    // Chamando a função de subtração e passando os parâmetros
+    // Produto misto.
     int r = mixed_product(vec1, vec2, vec3, vet, r);
-    // Mostrando o vetor resultante da subtração
-   printf("R->");
-    printf("%d", r);
-    
-   /* {
-        if(rn != 2)
-            printf("%d", r);
-        else
-            printf("%d", r);
-    }
-    */printf("\n");
-    
+    // Mostrando produto misto
+    printf("R-> ");
+    printf("%d\n", r);
     system("pause");
 }

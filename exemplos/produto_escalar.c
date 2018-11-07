@@ -15,16 +15,7 @@ int main(int argc,char **argv){
     // Chamando a função de produto escalar e passando os parâmetros
     r = scalar_product(vec1, vec2, rn);
     // Mostrando o valor resultante resultante do produto escalar
-    printf("R->");
-    printf("%d", r);
-    
-   /* {
-        if(rn != 2)
-            printf("%d", r);
-        else
-            printf("%d", r);
-    }
-    */printf("\n");
-    
+    printf("R-> ");
+    printf("%d\n", r);
     system("pause");
 }
