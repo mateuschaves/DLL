@@ -75,7 +75,7 @@ Desenvolvimento de uma DLL para resolver problemas da Geometria Analítica.
 
 - radians_to_degrees() <br><br>
   Realiza a transformação de radiano para angulo  <br><br>
- ```void  radians_to_degrees(int vetor1[], int vetor2[], int resultado[], int rn)``` <br> <br>
+ ```float radians_to_degrees(float rad)``` <br> <br>
  [Exemplo de utilização](https://github.com/mateuschaves/DLL/blob/master/exemplos/)
 
 
